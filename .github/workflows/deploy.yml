@@ -8,18 +8,18 @@ jobs:
   deploy:
     runs-on: [self-hosted]
     steps:
-      - name: download source code
+      - name: Download source code
         uses: actions/checkout@v2
 
-      - name: set environment variables in .env file
+      - name: Set environment variables in .env file
         run: |
           echo DATABASE_URI="${{ secrets.DATABASE_URI }}" > .env
 
-      - name: build docker images locally
+      - name: Build docker images locally
         run: docker-compose -f docker-compose.prod.yml build --parallel
 
       - name: Stop previous running containers (if any)
-        run: docker-compose stop
+        run: docker-compose -f docker-compose.prod.yml stop
         
-      - name: run docker compose
+      - name: Run the containers
         run: docker-compose -f docker-compose.prod.yml up -d

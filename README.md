@@ -25,6 +25,10 @@ The Bhagavad Gita GraphQL API allows any developer to use content from Gita in t
 
 Documentation for this API is available here: [GraphiQL UI](https://gql.bhagavadgita.dev/graphiql)
 
+## How it works?
+
+We are using [PostGraphile](https://www.graphile.org/postgraphile/) to instantly spin up a GraphQL API from our PostgreSQL database.
+
 ## Projects
 
 Here is a list of interesting projects using this API.

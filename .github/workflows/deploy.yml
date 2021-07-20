@@ -8,9 +8,6 @@ jobs:
   deploy:
     runs-on: [self-hosted]
     steps:
-      - name: cleanup and reset permissions to user from docker user
-        run: chown -R $USER:$USER $GITHUB_WORKSPACE
-
       - name: download source code
         uses: actions/checkout@v2
 
@@ -21,5 +18,8 @@ jobs:
       - name: build docker images locally
         run: docker-compose -f docker-compose.prod.yml build --parallel
 
+      - name: Stop previous running containers (if any)
+        run: docker-compose stop
+        
       - name: run docker compose
         run: docker-compose -f docker-compose.prod.yml up -d

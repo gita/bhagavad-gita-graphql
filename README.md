@@ -43,9 +43,9 @@ But If you wish you can self host anywhere you want.
 If you want to deploy your own instance,You can deploy
 the API server on your system or VPS using [`docker`](https://www.docker.com/):
 
-    ```shell
-    docker-compose -f docker-compose.prod.yml up --build -d
-    ```
+  ```shell
+  docker-compose -f docker-compose.prod.yml up --build -d
+  ```
 
 <!-- markdownlint-disable -->
 Now open http://localhost:5433/graphiql to see the docs.

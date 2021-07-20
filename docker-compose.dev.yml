@@ -1,19 +1,29 @@
 version: "3.8"
-services:
 
-    graphql:
-        container_name: bhagavad-gita-graphql
-        restart: always
-        image: bhagavad-gita-graphql
-        build:
-            context: .
-        env_file:
-            - ./.env
-        networks:
-            - network
-        ports:
-            - 5433:5433
-        command: ["--connection", "${DATABASE_URI}", "--port", "5433", "--schema", "public", "--cors", "--enhance-graphiql"]
+services:
+  graphql:
+    container_name: gita-graphql
+    restart: always
+    image: gita-graphql
+    build:
+      context: .
+    env_file:
+      - ./.env
+    networks:
+      - network
+    ports:
+      - 5433:5433
+    command:
+      [
+        "--connection",
+        "${DATABASE_URI}",
+        "--port",
+        "5433",
+        "--schema",
+        "public",
+        "--cors",
+        "--enhance-graphiql",
+      ]
 
 networks:
   network:

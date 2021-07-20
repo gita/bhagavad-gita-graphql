@@ -11,7 +11,7 @@ jobs:
       - name: Download source code
         uses: actions/checkout@v2
 
-      - name: Set environment variables in .env file
+      - name: Set environment variables in the .env file
         run: |
           echo DATABASE_URI="${{ secrets.DATABASE_URI }}" > .env
 

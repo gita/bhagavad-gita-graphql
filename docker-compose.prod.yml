@@ -4,7 +4,7 @@ services:
   graphql:
     container_name: gita-graphql
     restart: always
-    image: gita-graphql
+    image: bhagavadgita/gita-graphql
     build:
       context: .
     env_file:
@@ -22,25 +22,26 @@ services:
         "--schema",
         "public",
         "--cors",
+        "--disable-host-check",
         "--enhance-graphiql",
       ]
 
-  # caddy:
-  #   image: caddy/caddy:2.2.1-alpine
-  #   container_name: caddy-service
-  #   restart: always
-  #   ports:
-  #     - "80:80"
-  #     - "443:443"
-  #   volumes:
-  #     - $PWD/Caddyfile:/etc/caddy/Caddyfile
-  #     - $PWD/site:/srv
-  #     - caddy_data:/data
-  #     - caddy_config:/config
+  caddy:
+    image: caddy/caddy:2.2.1-alpine
+    container_name: caddy-service
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - $PWD/Caddyfile:/etc/caddy/Caddyfile
+      - $PWD/site:/srv
+      - caddy_data:/data
+      - caddy_config:/config
 
 networks:
   network:
 
-# volumes:
-#   caddy_data:
-#   caddy_config:
+volumes:
+  caddy_data:
+  caddy_config:

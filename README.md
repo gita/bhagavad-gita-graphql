@@ -23,7 +23,7 @@
 
 The Bhagavad Gita GraphQL API allows any developer to use content from Gita in their apps.
 
-Documentation for this API is available here: [GraphiQL UI](https://gql.bhagavadgita.dev/graphiql)
+Documentation for this API is available here: [GraphiQL UI](https://gql.bhagavadgita.io/graphiql)
 
 ## How it works?
 

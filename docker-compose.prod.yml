@@ -22,7 +22,6 @@ services:
         "--schema",
         "public",
         "--cors",
-        "--disable-host-check",
         "--enhance-graphiql",
       ]
 

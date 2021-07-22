@@ -1,9 +1,9 @@
 name: bhagavadgita
 originUrl: 'https://gql.bhagavadgita.io/graphql'
+schema: https://gql.bhagavadgita.io/graphql
 rules:
   - description: Cache everything (default)
-    maxAge: 86400
-    scope: PUBLIC
-    swr: 86400
+    maxAge: 900
+    swr: 900
     types:
       Query: true

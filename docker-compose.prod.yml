@@ -29,6 +29,8 @@ services:
     image: caddy/caddy:2.2.1-alpine
     container_name: caddy-service
     restart: always
+    networks:
+      - network
     ports:
       - "80:80"
       - "443:443"

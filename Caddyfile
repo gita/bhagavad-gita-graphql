@@ -1,5 +1,5 @@
 gql.bhagavadgita.io {
-  reverse_proxy gita-graphql:5433  {
+  reverse_proxy gita-graphql:8081  {
     header_down Strict-Transport-Security max-age=31536000;
    }
 }

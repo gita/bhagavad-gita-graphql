@@ -10,7 +10,6 @@
     Code for the BhagavadGita.io GraphQL API, which is an app built for Gita readers by Gita readers.
     <br />
     <br />
-    <img alt="GitHub issues" src="https://img.shields.io/github/issues/gita/bhagavad-gita-graphql">
     <a href="https://github.com/gita/bhagavad-gita-graphql/blob/master/LICENSE">
     <img alt="LICENSE" src="https://img.shields.io/badge/License-MIT-yellow.svg?maxAge=43200">
   </a>

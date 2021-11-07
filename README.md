@@ -79,7 +79,3 @@ Looking to contribute code ? PRs are most welcome!
 
 Join the [Discord chat server](https://discord.gg/gX8dstApZX) and
 hang out with others in the community.
-
-You can also use [GitHub Discussions](https://github.com/gita/bhagavad-gita-graphql/discussions)
-to ask questions or tell us about
-projects you have built using this API.

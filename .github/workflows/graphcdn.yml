@@ -16,6 +16,6 @@ jobs:
           check-latest: true
 
       - name: Push schema
-        run: npx graphcdn push schema
+        run: npx graphcdn push
         env:
           GRAPHCDN_TOKEN: ${{ secrets.GRAPHCDN_TOKEN }}

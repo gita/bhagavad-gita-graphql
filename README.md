@@ -33,7 +33,7 @@ We are using [PostGraphile](https://www.graphile.org/postgraphile/) to instantly
 Here is a list of interesting projects using this API.
 
 - [BhagavadGita.io](https://bhagavadgita.io)
-- [Android App](https://play.google.com/store/apps/details?id=com.hanuman.bhagavadgita)
+- [Android App](https://play.google.com/store/apps/details?id=com.gitainitiative.bhagavadgita)
 
 Have you build something with this API ? Open a "Show and tell" discussion. The maintainers will feature your project on the README if they find it interesting.
 

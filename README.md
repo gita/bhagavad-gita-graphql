@@ -52,7 +52,7 @@ the API server on your system or VPS using [`docker`](https://www.docker.com/):
 
 <!-- markdownlint-disable -->
 Now open http://localhost:5433/graphiql to see the docs.
-To stop the server, press <kbd>Ctrl</kbd> + <kbd>C</kbd> on your keyboard.
+To stop  the server, press <kbd>Ctrl</kbd> + <kbd>C</kbd> on your keyboard.
 <!-- markdownlint-enable -->
 
 ## Configuration

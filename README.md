@@ -73,7 +73,7 @@ specify the values in the format of `KEY=VALUE`.
 Feel free to use the [issue tracker](https://github.com/gita/bhagavad-gita-graphql/issues)
 for bugs and feature requests.
 
-Looking to contribute code ? PRs are most welcome!
+Looking to contribute code? PRs are most welcome!
 
 ## Community
 
